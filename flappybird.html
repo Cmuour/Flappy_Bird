@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Flappy_bird</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="mycanvas"></canvas>
+
+  <script src="./js/flappybird.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/land.js"></script>
+  <script src="./js/pipe.js"></script>
+  <script src="./js/bird.js"></script>
+  <script src="./js/scenemanager.js"></script>
+  <script>
+    let game = new Game({
+      canvasId:"#mycanvas",
+      sourceUrl:"./source.json"
+    })
+  </script>
+</body>
+</html>
